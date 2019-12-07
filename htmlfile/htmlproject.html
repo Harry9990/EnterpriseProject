@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="project.css">
+</head>
+<body>
+<div>
+Insert data by filling the fields below:
+<hr/>
+<form action="/insert" method="post">
+<div>
+<label for="title">title:</label>
+<input type="text" name="title"></input>
+</div>
+<div>
+<label for="city">city:</label>
+<input type="text" name="city"></input>
+</div>
+<div>
+<label for="charges">charges:</label>
+<input type="text" name="charges"></input>
+</div>
+<div>
+<label for="eventDate">eventDate:</label>
+<input type="text" name="eventDate"></input>
+</div>
+<div>
+<label for="seatsAvailable">seatsAvailable:</label>
+<input type="text" name="seatsAvailable"></input>
+</div>
+<div class="button">
+<button type="insert">Insert</button>
+</div>
+
+</form>
+
+<div>
+Get all the data of recreational_events:
+<hr/>
+<form action="/show" method = "get">
+<div>
+<button type="get">Get</button>
+</div>
+</form>
+
+
+<div>
+Update data by filling the fields below:
+<hr/>
+<form action="/update" method="post">
+ <input type ="hidden" name ="_method" value="PUT">
+<div>
+<label for="title">title:</label>
+<input type="text" name="title"></input>
+</div>
+<div>
+<label for="city">city:</label>
+<input type="text" name="city"></input>
+</div>
+<div>
+<label for="charges">charges:</label>
+<input type="text" name="charges"></input>
+</div>
+<div>
+<label for="eventDate">eventDate:</label>
+<input type="text" name="eventDate"></input>
+</div>
+<div>
+<label for="seatsAvailable">seatsAvailable:</label>
+<input type="text" name="seatsAvailable"></input>
+</div>
+<div class="button">
+<button type="update">Update</button>
+</div>
+
+</form>
+
+<div>
+Delete a movie:
+<hr/>
+<form action="/delete" method = "post">
+<input type ="hidden" name ="_method" value="DELETE">
+<div>
+<label for="title">title:</label>
+<input type="text" name="title"></input>
+</div>
+<div>
+<button type="delete">Delete</button>
+</div>
+</form>
+
+</head>
+</html>
